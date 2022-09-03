@@ -1,0 +1,24 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFtests.Components"
+             xmlns:ViewModels="clr-namespace:WPFtests.ViewModels" xmlns:Models="clr-namespace:WPFtests.ViewModels" x:Class="WPFtests.Components.ClickMe"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.DataContext>
+        <Models:ClickMeModel/>
+    </UserControl.DataContext>
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock FontSize="24" Text="Click count: " />
+            <TextBlock FontSize="24" Text="{Binding ClickCount}" />
+        </StackPanel>
+
+        <Button FontSize="14" Content="Click me" Click="Button_Click" />
+    </StackPanel>
+
+</UserControl>
