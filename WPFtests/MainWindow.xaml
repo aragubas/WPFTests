@@ -12,6 +12,7 @@
     <StackPanel>
         <Components:HelloWorld Height="100"/>
         <Components:ClickMe/>
+        <!-- Remove this line if you are not testing static class reactivity (but only if you want to) -->
         <Components:ClickMe/>
 
     </StackPanel>
